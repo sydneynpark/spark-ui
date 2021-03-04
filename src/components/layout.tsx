@@ -1,0 +1,5 @@
+
+
+const DRAWER_WIDTH_PERCENTAGE = 20;
+
+export default { DRAWER_WIDTH_PERCENTAGE };
