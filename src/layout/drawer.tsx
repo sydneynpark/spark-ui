@@ -9,6 +9,10 @@ const useStyles = makeStyles(theme => ({
         width: drawerWidth,
         flexShrink: 0,
       },
+      drawerPaper: {
+        width: drawerWidth,
+      },
+    
       content: {
         flexGrow: 1,
         backgroundColor: theme.palette.background.default,
@@ -16,17 +20,17 @@ const useStyles = makeStyles(theme => ({
         width: `calc(100% - ${drawerWidth}px)`,
         marginLeft: drawerWidth,    
       }
-}))
+}));
 
 function DrawerContent(props: any) {
         var classes = useStyles();
 
-        return <Drawer
-                className={classes.drawer}
-                variant="permanent"
-                anchor="left"
-            > {props.children}
-            </Drawer>
+        return <Drawer className={classes.drawer} variant="permanent" anchor="left" classes={{
+          paper: classes.drawerPaper,
+        }}
+> <div>
+                {props.children}
+                </div></Drawer>
 
 }
 

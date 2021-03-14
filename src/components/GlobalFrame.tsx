@@ -66,9 +66,6 @@ constructor(props: any) {
             <HashRouter>
 
                 <CssBaseline/>
-                <DrawerLayout.DrawerContent>
-                    <NavigationMenu/>
-                </DrawerLayout.DrawerContent>
 
                 <DrawerLayout.PrimaryContent>
                     <SiteHeader/>
@@ -88,6 +85,10 @@ constructor(props: any) {
                     </Container>
 
                 </DrawerLayout.PrimaryContent>
+
+                <DrawerLayout.DrawerContent>
+                    <NavigationMenu/>
+                </DrawerLayout.DrawerContent>
 
             </HashRouter>
         </ThemeProvider>

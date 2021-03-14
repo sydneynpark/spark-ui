@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import SiteBody from './components/SiteBody';
 import GlobalFrame from './components/GlobalFrame';
 import reportWebVitals from './reportWebVitals';
 
